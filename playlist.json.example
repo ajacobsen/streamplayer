@@ -1,0 +1,42 @@
+[
+	{
+		"video" : {
+			"file" : "/home/atze/Videos/pf_for_your_ice_only_hd.mp4",
+			"size" : { "x" : 1080, "y" : 620 },
+			"position" : { "x" : 0, "y" : 100}
+		},
+
+		"logo" : "/home/atze/VideoEdit/alpha.png",
+
+		"overlays" : [
+			{
+			"file" : "/home/atze/VideoEdit/BN_Banner-Next-BFDI.mov",
+			"offset" : 5
+			},
+			{
+			"file" : "/home/atze/VideoEdit/BN_Banner-Next-BFDI.mov",
+			"offset" : 25
+			}
+		]
+	},
+	{
+		"video" : {
+			"file" : "/home/atze/Videos/pf_for_your_ice_only_hd.mp4",
+			"size" : { "x" : 1080, "y" : 620 },
+			"position" : { "x" : 0, "y" : 100}
+		},
+
+		"logo" : "/home/atze/VideoEdit/alpha.png",
+
+		"overlays" : [
+			{
+			"file" : "/home/atze/VideoEdit/BN_Banner-Next-BFDI.mov",
+			"offset" : 5
+			},
+			{
+			"file" : "/home/atze/VideoEdit/BN_Banner-Next-BFDI.mov",
+			"offset" : 25
+			}
+		]
+	}
+]
