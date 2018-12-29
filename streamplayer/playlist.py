@@ -3,6 +3,7 @@
 import json
 
 from db import DB
+from config import Config
 
 class Entry:
 
@@ -22,13 +23,13 @@ class Entry:
 		return self.overlays
 
 	def get_logo(self):
-		return self.logo
+		return Config.MEDIAFOLDER + self.logo
 
 	def get_video(self):
 		if self.video["file"].endswith(".mp4"):
-			return self.video["file"]
+			return Config.MEDIAFOLDER + self.video["file"]
 		else:
-			return self.db.getVideoFile(self.video["file"])
+			return Config.MEDIAFOLDER + self.db.getVideoFile(self.video["file"])
 
 	def get_video_size_x(self):
 		return self.video["size"]["x"]
@@ -73,7 +74,6 @@ class Playlist:
 
 
 if __name__ == "__main__":
-	from config import Config
 	playlist = Playlist(Config.PLAYLISTFILE)
 	print(playlist)
 	while True:

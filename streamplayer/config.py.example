@@ -3,3 +3,4 @@ class Config:
 	DBFILE = "videos.db"
 	PLAYLISTFILE = "testplaylist.json"
 	RTMPSINKLOCATION = "rtmp://localhost:1935/live/test live=1"
+	MEDIAFOLDER = "/media/sf_VideoEdit/"

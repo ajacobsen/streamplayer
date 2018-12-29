@@ -49,7 +49,7 @@ class Player:
 			i = 0
 			for overlay in entry.get_overlays():
 				tmp_fsrc = Gst.ElementFactory.make("filesrc", "overlay_filesrc_{}".format(i))
-				tmp_fsrc.set_property("location", overlay["file"])
+				tmp_fsrc.set_property("location", Config.MEDIAFILDER + overlay["file"])
 				overlay_filesrcs.append(tmp_fsrc)
 
 				tmp_decodebin = Gst.ElementFactory.make("decodebin", "overlay_decodebin_{}".format(i))
