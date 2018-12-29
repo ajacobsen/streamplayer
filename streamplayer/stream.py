@@ -69,7 +69,7 @@ class Player:
 		# sink = Gst.ElementFactory.make("filesink", "sink")
 		# sink.set_property("location", "test{}.flv".format(self.counter))
 		sink = Gst.ElementFactory.make("rtmpsink")
-		sink.set_property("location", "rtmp://localhost:1935/live/test live=1")
+		sink.set_property("location", Config.RTMPSINKLOCATION)
 
 		self.pipeline = Gst.Pipeline.new()
 
